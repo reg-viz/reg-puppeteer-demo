@@ -1,0 +1,14 @@
+body {
+  background: #D7D8D9;
+  margin: 0 auto;
+}
+
+.cards {
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 480px;
+}
+
+.ui.card.large {
+  width: 100%;
+}

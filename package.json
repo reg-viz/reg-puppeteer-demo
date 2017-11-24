@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node capture.js",
+    "reg-suit": "reg-suit run"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "puppeteer": "^0.13.0",
+    "reg-keygen-git-hash-plugin": "^0.6.0",
+    "reg-notify-github-plugin": "^0.6.0",
+    "reg-publish-s3-plugin": "^0.6.0",
+    "reg-suit": "^0.6.0"
+  },
+  "dependencies": {
+    "semantic-ui-css": "^2.2.12"
+  }
+}
