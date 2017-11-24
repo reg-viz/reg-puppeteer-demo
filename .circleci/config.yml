@@ -25,5 +25,5 @@ jobs:
         
       # run tests!
       - run: yarn test
-      - run: ls -la screenshot
+      - run: yarn run reg-suit
 
