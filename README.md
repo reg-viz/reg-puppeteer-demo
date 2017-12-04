@@ -33,7 +33,7 @@ So we need a tool which:
 
 So we've developed this tool, [reg-suit](https://reg-viz.github.io/reg-suit). The following figure show a example of the report output by reg-suit(and you can see [the actual report](https://github.com/reg-viz/reg-puppeteer-demo/pull/1#issuecomment-346730340)):
 
-![report_example](docs/report_example)
+![report_example](docs/report_example.png)
 
 Once reg-suit detects visual difference, it creates a report like above so we can review whether the difference is intended or not using this.
 
@@ -76,9 +76,7 @@ And put sample HTML and styles. We'll test this HTML using reg-suit.
 You can see [the full HTML here(index.html)](index.html).
 
 ### Create script for capturing screenshot
-We need to give a screenshot image of the `index.html` to reg-suit for visual regression testing.
-
-So we install Puppeteer, which is a Node.js programmable interface for headless Chrome.
+We need to give a screenshot image of the `index.html` to reg-suit for visual regression testing. So we install Puppeteer, which is a Node.js programmable interface for headless Chrome and gives us [screenshot API](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagescreenshotoptions).
 
 ```sh
 npm install -D puppeteer mkdirp
@@ -140,7 +138,7 @@ After installation, execute reg-suit's initialization sub-command via:
 npx reg-suit init
 ```
 
-The first question asks us which plugin to install. For now, we select `reg-keygen-git-hash-plugin` and `reg-publish-s3-plugin`.
+The first question asks us which plugins to install. For now, we select `reg-keygen-git-hash-plugin` and `reg-publish-s3-plugin`.
 
 ```
 [reg-suit] info version: 0.6.1
@@ -160,7 +158,7 @@ Questions goes on. At "Working directory" and "Threshold" we pass "Yes". At the 
 ? Threshold, ranges from 0 to 1. Smaller value makes the comparison more sensitive. 0
 ```
 
-Next tell reg-suit S3 bucket to publish snapshot images. If answer yes to the "Create a new S3 bucket Yes" question, the init command creates a new bucket.
+Next tell where our S3 bucket is(reg-suit uses the S3 bucket to store snapshot image files). If answer yes to the "Create a new S3 bucket Yes" question, the init command creates a new bucket.
 
 If you are not ready AWS account, you can re-configure it via `npx reg-suit prepare --plugin publish-s3`.
 
