@@ -1,10 +1,10 @@
-# reg-puppeteer-demo
-[![CircleCI](https://circleci.com/gh/reg-viz/reg-puppeteer-demo.svg?style=svg)](https://circleci.com/gh/reg-viz/reg-puppeteer-demo)
+# reg-puppeteer-demo [![CircleCI](https://circleci.com/gh/reg-viz/reg-puppeteer-demo.svg?style=svg)](https://circleci.com/gh/reg-viz/reg-puppeteer-demo)
+
 This is a demonstration repository to explain how to introduce visual regression testing into your project.
 
 ## Table of contents
 * [Table of contents](#table-of-contents)
-* [tl;tr; Why visual regression testing?](#tltr-why-visual-regression-testing)
+* [TL;DR Why visual regression testing?](#tltr-why-visual-regression-testing)
 * [Technology](#technology)
 * [How to introduce automated visual snapshot testing](#how-to-introduce-automated-visual-snapshot-testing)
   + [Requirements](#requirements)
@@ -19,7 +19,7 @@ This is a demonstration repository to explain how to introduce visual regression
 * [More information](#more-information)
 * [License](#license)
 
-## tl;tr; Why visual regression testing?
+## TL;DR Why visual regression testing?
 I'm working on a huge SPA(Single Page Application) project as a front-end developer. Day and day we've created a number of components and wrote test codes for them, and we were tired out from writing assertions for DOM to be rendered.
 
 We considered to introduce snapshot testing. Using this method, the actual snapshot(rendered result) will be used as the expected data in the next test. For example Jest or Ava has API for snapshot testing, however the DOM based snapshot testing can not alert breaking CSS style.
@@ -151,7 +151,7 @@ The first question asks us which plugin to install. For now, we select `reg-keyg
  ◯  reg-simple-keygen-plugin : Determine snapshot key with given values
 ```
 
-The Question goes on. At "Working directory" and "Threshold" we pass "Yes". At the "Directory contains actual images" question, we need to tell the `screenshot` directory prepared above step.
+Questions goes on. At "Working directory" and "Threshold" we pass "Yes". At the "Directory contains actual images" question, we need to tell the `screenshot` directory prepared above step.
 
 ```
 ? Working directory of reg-suit. .reg
