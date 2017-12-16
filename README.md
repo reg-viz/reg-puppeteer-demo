@@ -260,10 +260,10 @@ reg-suit can notify the comparison result as GitHub pull request's comment.
 
 ![prcomment](docs/prcomment.png)
 
-To turn this feature on, install `reg-noftify-github-plugin`.
+To turn this feature on, install `reg-notify-github-plugin`.
 
 ```sh
-npm install -D reg-noftify-github-plugin
+npm install -D reg-notify-github-plugin
 ```
 
 Ant configure this plugin via the following command:
