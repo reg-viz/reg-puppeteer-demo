@@ -6,13 +6,13 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "puppeteer": "^0.13.0",
-    "reg-keygen-git-hash-plugin": "^0.6.0",
-    "reg-notify-github-plugin": "^0.6.0",
-    "reg-publish-s3-plugin": "^0.6.0",
-    "reg-suit": "^0.6.0"
+    "puppeteer": "^2.0.0",
+    "reg-keygen-git-hash-plugin": "^0.7.25",
+    "reg-notify-github-plugin": "^0.7.26",
+    "reg-publish-s3-plugin": "^0.7.25",
+    "reg-suit": "^0.8.4"
   },
   "dependencies": {
-    "semantic-ui-css": "^2.2.12"
+    "semantic-ui-css": "^2.4.1"
   }
 }
