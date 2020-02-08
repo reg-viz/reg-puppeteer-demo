@@ -25,5 +25,5 @@ jobs:
         
       # run tests!
       - run: yarn test
-      - run: yarn run reg-suit
-
+      - run: echo $GOOGLE_SERVICE_ACCOUNT_KEY > ~/gcp_sa.json
+      - run: GOOGLE_APPLICATION_CREDENTIALS=~/gcp_sa.json yarn run reg-suit

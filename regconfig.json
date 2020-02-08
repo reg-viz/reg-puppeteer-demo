@@ -10,10 +10,10 @@
   "plugins": {
     "reg-keygen-git-hash-plugin": true,
     "reg-notify-github-plugin": {
-      "clientId": "MzQ0tDAzNzIz0S9KTdctKC0oSC1JTS3STUnNzdc3MTA0gkiUZVYBAA=="
+      "clientId": "MzK2NDA3Nzew1C9KTdctKC0oSC1JTS3STUnNzdc3MzOzNDA10U9PTc1Oy6lMLQIA"
     },
-    "reg-publish-s3-plugin": {
-      "bucketName": "reg-publish-bucket-2c260973-434b-4cc9-8e17-a14e72fd062c"
+    "reg-publish-gcs-plugin": {
+      "bucketName": "christians-regviz-bucket"
     }
   }
 }
