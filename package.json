@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "test": "node capture.js",
-    "reg-suit": "reg-suit run"
+    "reg-suit": "reg-suit run --verbose"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
