@@ -7,7 +7,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "puppeteer": "^2.0.0",
-    "reg-keygen-git-hash-plugin": "^0.7.25",
+    "reg-keygen-git-hash-plugin": "^0.10.16",
     "reg-notify-github-plugin": "^0.7.26",
     "reg-publish-s3-plugin": "^0.7.25",
     "reg-suit": "^0.8.4"
